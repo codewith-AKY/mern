@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+.profile-card{
+    border:2px solid rgb(18, 15, 15);
+    margin: 40px;
+    text-align:center;
+    width:400px;
+    height: 400px;
+
+}
+img{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+border: -2px;
+margin-top: 10px;
+margin-left: 20px;
+}
+p{
+ font-style: 10px;
+ font-size: small;
+ padding: 10px;
+}
+
+.boxx{
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+   
+    justify-content: center;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    border:none;
+    width: 100px;
+    color:white;
+    background-color: rgb(50, 138, 220);
+    align-items: center;
+}

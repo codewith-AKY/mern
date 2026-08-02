@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            gap:2rem;
+            padding: 10px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border-radius: 5px;
+            border: 3px solid rgb(0, 0, 0);
+            position:relative;
+
+        }
+        .box1{
+            height: 80px;
+            width: 160px;
+            background-color: aquamarine;
+            border-radius: 5px;
+            border: 3px solid rgb(232, 219, 219);
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            
+        }
+        .box2{
+             height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border-radius: 5px;
+            border: 3px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">0</div>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+
+    </div>
+    <div class="Cart">
+        <p>When </p>
+    </div>
+    
+    
+</body>
+</html>

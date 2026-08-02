@@ -1,0 +1,174 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            width: 100%;
+            height: 60px;
+        }
+        header h2{
+            text-align: center;
+            margin: 10px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            
+            align-items: center;
+            flex: 1;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 5rem;
+            margin: 0 20px 0 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgb(26, 144, 144);
+
+
+        }
+        .hero{
+            width: 100%;
+            height: 400px;
+            background-color:rgb(72, 154, 186);
+            margin:0;
+            padding: 0;
+            top: -10;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1{
+            text-align: center;
+            color: #fff;
+            font-size: 40px;
+
+        }
+        .hero p{
+            text-align: center;
+            color: #fff;
+        }
+        .hero button{
+            padding: 10px 20px;
+            color: rgb(18, 17, 17);
+            border: none;
+            border-radius: 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        #Product{
+            margin-top: 20px;
+           display:flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           gap: 2rem;
+
+        }
+        .cart{
+            border: 1px solid #ccc;
+           height: 300px;
+           width: 300px;
+           border-radius: 5px;
+           text-align: center;
+        }
+        .cart img{
+            width: 90%;
+            height: 200px;
+            margin:10px;
+            border-radius: 5px;
+        }
+        .cart h3{
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .cart p{
+            font-size: 18px;
+            color: #333;
+            margin-top:-5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>ShopHub</h2>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Product">Products</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero">
+            <h1>Welcome to ShopHub</h1>
+            <p>Best Products at Best Prices</p>
+            <button>Shop Now</button>
+
+        </div>
+
+        <section id="Product">
+            <div class="cart">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQq_EGqOPQJ5eQqg_8TkpQM6y5EYE0Cji-JuE5h8rzQNBbVFCWXPbVRad&s=10">
+                <h3>Laptop</h3>
+                <p>$800</p>
+            </div>
+           <div class="cart">
+                <img src="https://media.wired.com/photos/69a09a819c841fa3ea520edd/4:3/w_4676,h_3507,c_limit/Google%20Pixel%2010a%20SOURCE%20Julian%20Chokkattu.jpg">
+                <h3>Phones</h3>
+                <p>$600</p>
+            </div>
+            <div class="cart">
+                <img src="https://www.neostore.com.np/assets/uploads/Neone_Products-3053.JPG">
+                <h3>Headphones</h3>
+                <p>$50</p>
+            </div>
+            <div class="cart">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHbk2jY5w2GuwF338VGgUwPPJxQ_1VmzoreMGnfVqSscHad6smLsBEa3k&s=10">
+                <h3>Watch</h3>
+                <p>$120</p>
+            </div>
+             <div class="cart">
+                <img src="https://i1.adis.ws/i/canon/ecom_DSLR_Camera_Tile_2025_1x1_an?w=940&bg=white&fmt=webp&qlt=80&sm=aspect&aspect=1:1">
+                <h3>Camera</h3>
+                <p>$700</p>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>

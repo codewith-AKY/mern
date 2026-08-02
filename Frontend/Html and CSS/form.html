@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    body{
+        background-color: lightblue;
+    }
+</style>
+<body>
+    <label>Name</label>
+    <input type="text"  placeholder="Enter your name">
+    <br>
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+    <br>
+    <label>Password</label>
+    <input type="password" placeholder="Enter your password">
+    <br>
+    <label>Date of Birth</label>
+    <input type="date">
+    <br>
+    <label>Gender</label>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" value="other" id="other">
+    <label for="other">Other</label>
+    <br>
+    <label>Upload Cv</label>
+    <input type="file">
+    <br>
+   
+    <select>
+        <option disabled selected>Select your country</option>
+        <option value="nepal">Nepal</option>
+        <option value="india">India</option>
+        <option value="china">China</option>
+    
+    </select>
+
+    <br>
+
+    <label>Choose your hobbies:</label>
+    <input type="checkbox" name="hobbies" value="reading" id="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" name="hobbies" value="traveling" id="traveling">
+    <label for="traveling">Traveling</label>
+    <input type="checkbox" name="hobbies" value="sports" id="sports">
+    <label for="sports">Sports</label>
+    <br>
+    <button type="submit">Submit</button>
+</body>
+</html>
