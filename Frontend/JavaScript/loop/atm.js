@@ -7,8 +7,8 @@ do {
     attempts++;
 
     if (pin === correctPin) {
-        console.log("You are authorized");
-        break
+        alert("You are authorized");
+        break;
     } else {
         console.log("Wrong PIN.");
     }
