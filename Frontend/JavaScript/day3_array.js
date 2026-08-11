@@ -93,3 +93,4 @@ let even = number.filter((num) => {
 
 console.log(result);
 console.log(even);
+

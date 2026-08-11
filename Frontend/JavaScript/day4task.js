@@ -28,11 +28,32 @@ let productItems = [
         name: "Mouse",
         price: 500,
         quantity: 3,
+    },{
+        id:6,
+        name:"keyboard",
+        price:400,
+        quantity:0
+    },
+    {
+        id:7,
+        name:"pendrive",
+        price:600,
+        quantity:0
     }
 ];
-let sum=0;
-let totalPrice = productItems.map((product) => {
-    return sum += product.price * product.quantity;
-});
+ let sum=0;
+ let totalPrice = productItems.map((product) => {
+     return sum = product.price * product.quantity;
+ });
 
-console.log("Total Price:", totalPrice[4]);
+let ava_Product=productItems.filter(product=>product.quantity>0).map((product)=>{
+    return{
+       id: product.id,
+        name:product.name
+    }
+})
+console.log("Available product are"+ava_Product[0].id);
+    console.log(ava_Product);
+
+
+console.log("Total Price:", totalPrice[4],totalPrice[2]);
