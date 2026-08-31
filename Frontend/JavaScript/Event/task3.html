@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Hide Password</title>
+    <style>
+    input {
+        width: 250px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input:focus {
+        border-color: blue;
+        outline: none;
+    }
+</style>
+</head>
+<body>
+
+    <input type="password" id="password" placeholder="Enter password">
+
+    <button id="toggleBtn">Show Password</button>
+
+    <script>
+        let password = document.getElementById("password");
+        let button = document.getElementById("toggleBtn");
+
+        button.addEventListener("click", function() {
+
+            if (password.type === "password") {// check by default paswword is hidden or not ,if yes
+                password.type = "text";//show plain text
+                button.textContent = "Hide Password";//set hide button
+            }
+            else {// if no it hides the password again
+                password.type = "password";
+                button.textContent = "Show Password";//set button to show
+            }
+
+        });
+    </script>
+
+</body>
+</html>

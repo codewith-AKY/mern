@@ -1,0 +1,1 @@
+//2 create a text and as user display the character count
